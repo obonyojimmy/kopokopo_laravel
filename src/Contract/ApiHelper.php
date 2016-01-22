@@ -9,7 +9,7 @@ class ApiHelper implements ApiContract
 {
      
      
-     protected GatewayConfigs(){
+     protected function GatewayConfigs(){
 		 $service_name = config('kopokopo.service_name');
 	 }
     
