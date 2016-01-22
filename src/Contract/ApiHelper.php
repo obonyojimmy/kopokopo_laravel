@@ -5,11 +5,11 @@ namespace Obonyojimmy\Kopokopo_laravel\Contract;
 
 use Obonyojimmy\Kopokopo_laravel\Contract\ApiContract;
 
-class ApiHelper implements ApiContract
+abstract class ApiHelper implements ApiContract
 {
      
      
-     protected function GatewayConfigs(){
+     abstract protected function GatewayConfigs(){
 		 $service_name = config('kopokopo.service_name');
 	 }
     
