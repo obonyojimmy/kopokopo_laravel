@@ -1,2 +1,2 @@
 # kopokopo-laravel
-KopoKopo Laravel 5
+Laravel KopoKopo Payament API
