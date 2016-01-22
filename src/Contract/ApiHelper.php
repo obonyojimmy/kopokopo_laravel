@@ -7,7 +7,11 @@ use Obonyojimmy\Kopokopo_laravel\Contract\ApiContract;
 
 class ApiHelper implements ApiContract
 {
-      $service_name = config('kopokopo.service_name');
+     
+     
+     protected GatewayConfigs(){
+		 $service_name = config('kopokopo.service_name');
+	 }
     
 	 public  function test() 
 	{ 
