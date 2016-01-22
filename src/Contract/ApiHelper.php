@@ -1,9 +1,9 @@
 <?php
 
 
-namespace Obonyojimmy\Kopokopo-laravel\Contract;
+namespace Obonyojimmy\Kopokopo_laravel\Contract;
 
-use Obonyojimmy\Kopokopo\Contract\ApiContract;
+use Obonyojimmy\Kopokopo_laravel\Contract\ApiContract;
 
 class ApiHelper implements ApiContract
 {

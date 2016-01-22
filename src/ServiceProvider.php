@@ -1,6 +1,6 @@
 <?php 
 
-namespace Obonyojimmy\Kopokopo-laravel;
+namespace Obonyojimmy\Kopokopo_laravel;
 
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 
@@ -54,17 +54,17 @@ class ServiceProvider extends LaravelServiceProvider {
 
         $this->publishes([$configPath => config_path('kopokopo.php')]);
 
-        $this->mergeConfigFrom($configPath, 'kopokopo-laravel');
+        $this->mergeConfigFrom($configPath, 'kopokopo_laravel');
     }
 
     private function handleTranslations() {
 
-        $this->loadTranslationsFrom(__DIR__.'/../lang', 'kopokopo-laravel');
+        $this->loadTranslationsFrom(__DIR__.'/../lang', 'kopokopo_laravel');
     }
 
     private function handleViews() {
 
-        $this->loadViewsFrom(__DIR__.'/../views', 'kopokopo-laravel');
+        $this->loadViewsFrom(__DIR__.'/../views', 'kopokopo_laravel');
 
         $this->publishes([__DIR__.'/../views' => base_path('resources/views/vendor/kopokopo')]);
     }

@@ -1,8 +1,6 @@
 <?php
 
-/**
- * Your package config would go here
- */
+
 
 return [
  'service_name' => 'M-PESA',

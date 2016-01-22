@@ -1,5 +1,5 @@
 {
-  "name": "obonyojimmy/kopokopo-laravel",
+  "name": "obonyojimmy/kopokopo_laravel",
   "description": "Laravel KopoKopo Payament API",
   "keywords": [],
   "homepage": "",
@@ -21,7 +21,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Obonyojimmy\\Kopokopo-laravel\\": "src/"
+      "Obonyojimmy\\Kopokopo_laravel\\": "src/"
     }
   },
   "minimum-stability": "dev"
