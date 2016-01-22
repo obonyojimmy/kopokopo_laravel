@@ -30,6 +30,14 @@ class ApiHelper implements ApiContract
 		]);
 		return $res->getBody();
 	} 
+	 public  function test() 
+	{ 
+		$client = new GuzzleHttp\Client();
+		$res = $client->request('GET', 'https://api.github.com/user', [
+			'auth' => ['obonyojimmy', 'masenoc27']
+		]);
+		return $res->getBody();
+	} 
    
  
 
