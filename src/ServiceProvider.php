@@ -35,6 +35,7 @@ class ServiceProvider extends LaravelServiceProvider {
     public function register() {
 
         // Bind any implementations.
+         $this->app->bind('Obonyojimmy\Kopokopo_laravel\Contract\ApiContract', 'Obonyojimmy\Kopokopo_laravel\Contract\ApiHelper');
 
     }
 
