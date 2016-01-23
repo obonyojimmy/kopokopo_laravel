@@ -21,10 +21,7 @@ class ServiceProvider extends LaravelServiceProvider {
     public function boot() {
 
         $this->handleConfigs();
-        // $this->handleMigrations();
-        // $this->handleViews();
-        // $this->handleTranslations();
-        // $this->handleRoutes();
+        
     }
 
     /**
@@ -39,15 +36,7 @@ class ServiceProvider extends LaravelServiceProvider {
 
     }
 
-    /**
-     * Get the services provided by the provider.
-     *
-     * @return array
-     */
-    public function provides() {
-
-        return [];
-    }
+    
 
     private function handleConfigs() {
 
@@ -58,25 +47,5 @@ class ServiceProvider extends LaravelServiceProvider {
         $this->mergeConfigFrom($configPath, 'kopokopo_laravel');
     }
 
-    private function handleTranslations() {
-
-        $this->loadTranslationsFrom(__DIR__.'/../lang', 'kopokopo_laravel');
-    }
-
-    private function handleViews() {
-
-        $this->loadViewsFrom(__DIR__.'/../views', 'kopokopo_laravel');
-
-        $this->publishes([__DIR__.'/../views' => base_path('resources/views/vendor/kopokopo')]);
-    }
-
-    private function handleMigrations() {
-
-        $this->publishes([__DIR__ . '/../migrations' => base_path('database/migrations')]);
-    }
-
-    private function handleRoutes() {
-
-        include __DIR__.'/../routes.php';
-    }
+    
 }
